@@ -6,7 +6,7 @@ A small library which provides methods to `escape` and `unescape` HTML entities 
 ## Installation
 
   ```
-  npm install es-en --save
+  npm install -g es-en
 
   ```
 
