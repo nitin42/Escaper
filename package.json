@@ -1,0 +1,24 @@
+{
+  "name": "es-en",
+  "version": "0.1.0",
+  "description": "A small library which provides methods to escape and unescape HTML entities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nitin42/"
+  },  
+  "keywords": [
+    "escape",
+    "unescape",
+    "html"
+  ],
+  "author": "Nitin Tulswani <tulswani19@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
