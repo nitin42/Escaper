@@ -14,15 +14,17 @@ A small library which provides methods to `escape` and `unescape` HTML entities 
   
   ```
 
-  var hescape = require('es-en');
-  var escape = hescape.escape,
-  var unescape = hescape.unescape;
+  > var hescape = require('es-en');
+  > var escape = hescape.escape,
+  > var unescape = hescape.unescape;
 
-  var html = '<h1>Help me!</h1>',
-  var escaped = escape(html),
-  var unescaped = unescape(escaped);
+  > var html = '<h1>Help me!</h1>',
+  > var escaped = escape(html),
+  > var unescaped = unescape(escaped);
 
-  console.log('html', html, 'escaped', escaped, 'unescaped', unescaped);
+  > console.log('html', html, 'escaped', escaped, 'unescaped', unescaped);
+  
+  html <h1>Hello world</h1> escaped &lt;h1&gt;Hello world&lt;&#x2F;h1&gt; unescaped <h1>Hello world</h1>
 
   ```
 
