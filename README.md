@@ -34,6 +34,6 @@ A small library which provides methods to `escape` and `unescape` HTML entities 
 	
 Add unit tests for any new or changed functionality.
 
-## Release History
+## License
 
-* 0.1.0 Initial release
+MIT
