@@ -14,7 +14,7 @@ A small library which provides methods to `escape` and `unescape` HTML entities 
   
   ```
 
-  var hescape = require('html-escape');
+  var hescape = require('es-en');
   var escape = hescape.escape,
   var unescape = hescape.unescape;
 
