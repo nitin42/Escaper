@@ -29,9 +29,9 @@ A small library which provides methods to `escape` and `unescape` HTML entities 
   ```
 
 ## Tests
-
+ ```
   npm test
-
+ ```
 ## Contributing
 	
 Add unit tests for any new or changed functionality.
