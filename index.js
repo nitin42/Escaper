@@ -1,10 +1,13 @@
+/**
+ * @author Nitin Tulswani <tulswani19@gmail.com>
+ */
+
 /* 
 * Escape the special characters in the given string of html to prevent XSS attack.
 * 
 * @param {String} html
 * return {String}
 */
-
 module.exports = {
 	escape: function(html){    // '<h1>Hello World</h1>'
 		return String(html)    // <h1>Hello World</h1>
