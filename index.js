@@ -9,7 +9,7 @@
 * return {String}
 */
 module.exports = {
-	escape: function(html){    // '<h1>Hello World</h1>'
+	escape: (html) => {    // '<h1>Hello World</h1>'
 		return String(html)    // <h1>Hello World</h1>
 			.replace(/&/g, '&amp;')
 			.replace(/"/g, '&quot;')
@@ -31,7 +31,7 @@ module.exports = {
 	* return {String}
 	*/
 
-	unescape: function(html){
+	unescape: (html) => {
 		return String(html)
 			.replace(/&amp;/g, '&')
 			.replace(/&quot;/g, '"')
