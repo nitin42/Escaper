@@ -6,87 +6,87 @@ var scape = require("../index");
 var escape = scape.escape;
 var unescape = scape.unescape;
 
-describe("Escape characters", function(){
-	it("converts & to &amp;", function(){
+describe("Escape characters", () => {
+	it("converts & to &amp;", () => {
 		expect(escape("&")).to.equal("&amp;");
 	});
 
-	it("converts \"  to &quot;", function(){
+	it("converts \"  to &quot;", () => {
 		expect(escape("\"")).to.equal("&quot;");
 	});
 
-	it("converts ' to &#27;", function(){
+	it("converts ' to &#27;", () => {
 		expect(escape("'")).to.equal("&#27;");
 	});
 
-	it("converts < to &lt;", function(){
+	it("converts < to &lt;", () => {
 		expect(escape("<")).to.equal("&lt;");
 	});
 
-	it("converts > to &gt;", function(){
+	it("converts > to &gt;", () => {
 		expect(escape(">")).to.equal("&gt;");
 	});
 
-	it("converts / to &#x2F;", function(){
+	it("converts / to &#x2F;", () => {
 		expect(escape("/")).to.equal("&#x2F;");
 	});	
 
-	it("converts * into &times; ", function(){
+	it("converts * into &times; ", () => {
 		expect(escape("*")).to.equal("&times;");
 	});	
 
-	it("converts . into &sdot; ", function(){
+	it("converts . into &sdot; ", () => {
 		expect(escape(".")).to.equal("&sdot;");
 	});	
 
-	it("converts ! into &not; ", function(){
+	it("converts ! into &not; ", () => {
 		expect(escape("!")).to.equal("&not;");
 	});	
 
-	it("Returns empty string if no value or falsy value", function(){
+	it("Returns empty string if no value or falsy value", () => {
 		expect(escape("")).to.equal("");
 	});
 
 });
 
-describe("Unescape characters", function(){
-	it("converts &amp; into & ", function(){
+describe("Unescape characters", () => {
+	it("converts &amp; into & ", () => {
 		expect(unescape("&amp;")).to.equal("&");
 	});
 
-	it("converts &quot; into \" ", function(){
+	it("converts &quot; into \" ", () => {
 		expect(unescape("&quot;")).to.equal("\"");
 	});
 
-	it("converts &#27; into ' ", function(){
+	it("converts &#27; into ' ", () => {
 		expect(unescape("&#27;")).to.equal("'");
 	});
 
-	it("converts &lt; into < ", function(){
+	it("converts &lt; into < ", () => {
 		expect(unescape("&lt;")).to.equal("<");
 	});
 
-	it("converts &gt; into > ", function(){
+	it("converts &gt; into > ", () => {
 		expect(unescape("&gt;")).to.equal(">");
 	});
 
-	it("converts &#x2F; into / ", function(){
+	it("converts &#x2F; into / ", () => {
 		expect(unescape("&#x2F;")).to.equal("/");
 	});
 
-	it("converts &times; into * ", function(){
+	it("converts &times; into * ", () => {
 		expect(unescape("&times;")).to.equal("*");
 	});
 
-	it("converts &sdot; into . ", function(){
+	it("converts &sdot; into . ", () => {
 		expect(unescape("&sdot;")).to.equal(".");
 	});
 
-	it("converts &not; into ! ", function(){
+	it("converts &not; into ! ", () => {
 		expect(unescape("&not;")).to.equal("!");
 	});	
 
-	it("Returns empty string if no value or falsy value", function(){
+	it("Returns empty string if no value or falsy value", () => {
 		expect(unescape("")).to.equal("");
 	});
 
